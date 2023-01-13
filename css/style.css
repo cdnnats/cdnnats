@@ -110,11 +110,11 @@ p {
 }
 
 .title-image {
-    width: 40%;
-    transform: rotate(20deg);
+    width: 35%;
+    transform: rotate(25deg);
     padding: 5%;
     position: absolute;
-    right: 8%
+    right: 10%
 }
 
 .pictures {
