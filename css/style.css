@@ -32,16 +32,15 @@ p {
 }
 
 #pictures {
-    background-color: #990000
-;
+    background-color: #990000;
     color: white;
     padding: 7% 15%;
     text-align:center;
 }
 
 #press {
-    background-color: #990000;
-    color: white;
+    background-color: white;
+    color: #990000;
     padding: 7% 10%;
     text-align:center;
 }
@@ -67,7 +66,7 @@ p {
 }
 
 #transponders {
-    background-color: white;
+    background-color: #990000;
     text-align: center;
     padding: 5% 5%
 }
@@ -125,6 +124,26 @@ p {
 .press-pictures {
     width: 20%;
     margin: 15px;
+}
+
+.sponsors-title {
+    margin: 2%;
+    text-align: center;
+}
+
+.sponsors-title img {
+    width: 50%;
+    margin: auto;
+}
+
+.sponsors-class {
+    width: 20%;
+    margin: 2%;
+}
+
+.sponsors-associate {
+    width: 15%;
+    margin: 2%;
 }
 
 .feature-box{
