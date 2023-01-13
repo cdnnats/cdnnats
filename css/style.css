@@ -1,0 +1,202 @@
+body {
+    background-color: #990000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: bold
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    color:#8f8f8f;
+}
+
+#title {
+    background-color:#990000;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+#features {
+    background-color: white;
+    padding: 7% 15%;
+    position: relative;
+}
+
+#pictures {
+    background-color: #990000
+;
+    color: white;
+    padding: 7% 15%;
+    text-align:center;
+}
+
+#press {
+    background-color: #990000;
+    color: white;
+    padding: 7% 10%;
+    text-align:center;
+}
+
+#pricing {
+    background-color: white;
+    text-align: center;
+    padding:7% 5%;
+}
+
+#hours {
+    text-align: center;
+    color: white;
+    padding: 7% 5%;
+    margin: 0% 10%
+
+}
+
+#location {
+    background-color: white;
+    text-align: center;
+    padding: 5% 5%
+}
+
+#transponders {
+    background-color: white;
+    text-align: center;
+    padding: 5% 5%
+}
+
+#socials {
+    background-color: #990000;
+    text-align: center;
+    padding: 5% 20%;
+    color: white;
+}
+
+#footer {
+    padding: 20px 0px 15px 0px;
+    color: gray;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.navbar {
+    background-color: #990000;
+    padding-bottom: 1rem;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.container-fluid {
+    padding: 3% 5% 15%;
+}
+
+.ddlogomain {
+    height: 40px;
+    padding-left: 20px;
+}
+
+.title-image {
+    width: 40%;
+    transform: rotate(20deg);
+    padding: 5%;
+    position: absolute;
+    right: 8%
+}
+
+.pictures {
+    width: 100%;
+    margin: 20px;
+}
+
+.press-pictures {
+    width: 20%;
+    margin: 15px;
+}
+
+.feature-box{
+    text-align: center;
+}
+
+.feature-icon {
+    color:#990000;
+    margin: 1rem;
+}
+
+.feature-icon:hover {
+    color:cyan
+}
+
+.hours-icon {
+    color: white;
+    margin: 1rem;
+}
+
+.hours-icon:hover {
+    color: cyan;
+}
+
+.hours-display {
+    min-width: 50px;
+}
+
+.location-icon {
+    color:#990000;
+    margin: 1rem;
+}
+
+.location-icon:hover {
+    color: cyan;
+}
+
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.socials-icon {
+    color: white;
+    margin: 1rem;
+}
+
+.socials-icon:hover {
+    color: cyan;
+}
+
+@media (max-width: 767px) {
+
+    #location {
+
+    }
+
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
