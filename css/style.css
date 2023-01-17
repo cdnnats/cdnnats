@@ -91,6 +91,12 @@ p {
     padding: 5% 5%
 }
 
+#registration {
+    background-color: white;
+    text-align: center;
+    padding: 5% 5%
+}
+
 .navbar {
     background-color: #990000;
     padding-bottom: 1rem;
