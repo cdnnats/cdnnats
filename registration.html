@@ -29,7 +29,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <a class="navbar-brand" href="index.html" >
-        <img class="ddlogomain" src="images/CONrc LOGO VER02-REV00.svg" alt="Cdn Nats" width="100%">
+        <img class="ddlogomain" src="images/CONrc LOGO VER02-REV00.svg" alt="Cdn Nats">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,8 +39,19 @@
             <Li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </Li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" href="registration.html">Registration</a>
+          </li>
+          -->
           <li class="nav-item">
             <a class="nav-link" href="#footer">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#12s">1/12 Scale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#12ss">Touring Car</a>
           </li>
         </ul>
       </div>
@@ -51,14 +62,13 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
-            <h1>2023 Canadian On-Road Nationals</h1>
-            <h4>Presented By</h4>
-            <h3>Awesomatix USA</h3>
-            <h4>Thursday, March 30th - Sunday, April 2nd</h4>
+            <h1>2024 Canadian On-Road Nationals</h1>
+            <!-- <h4>Presented By</h4> -->
+            <!-- <h3>Awesomatix USA</h3> -->
             <h1>Registration:</h1>
           </div>
           <div class="col-md-6">
-            <img class="title-image" src="images/CONrc_Logo_VER04-REV00.svg" alt="">
+            <img class="title-image" src="images/LOGO_VER03-REV00_RED BG.svg" alt="">
           </div>
         </div>
       </div>
@@ -67,112 +77,47 @@
 
     <section id="registration">
 
-    
-      <iframe
-      id="JotFormIFrame-230157666263054"
-      title="2023 Canadian Nats Registration Form"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allowfullscreen="true"
-      allow="geolocation; microphone; camera"
-      src="https://form.jotform.com/230157666263054"
-      frameborder="0"
-      style="
-      min-width: 100%;
-      height:539px;
-      border:none;"
-      scrolling="no"
-    >
-    </iframe>
-    <script type="text/javascript">
-    var ifr = document.getElementById("JotFormIFrame-230157666263054");
-    if (ifr) {
-      var src = ifr.src;
-      var iframeParams = [];
-      if (window.location.href && window.location.href.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-      }
-      if (src && src.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-        src = src.substr(0, src.indexOf("?"))
-      }
-      iframeParams.push("isIframeEmbed=1");
-      ifr.src = src + "?" + iframeParams.join('&');
-    }
-    window.handleIFrameMessage = function(e) {
-      if (typeof e.data === 'object') { return; }
-      var args = e.data.split(":");
-      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-      if (!iframe) { return; }
-      switch (args[0]) {
-        case "scrollIntoView":
-          iframe.scrollIntoView();
-          break;
-        case "setHeight":
-          iframe.style.height = args[1] + "px";
-          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-            iframe.style.minHeight = args[1] + "px";
-          }
-          break;
-        case "collapseErrorPage":
-          if (iframe.clientHeight > window.innerHeight) {
-            iframe.style.height = window.innerHeight + "px";
-          }
-          break;
-        case "reloadPage":
-          window.location.reload();
-          break;
-        case "loadScript":
-          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-          var src = args[1];
-          if (args.length > 3) {
-              src = args[1] + ':' + args[2];
-          }
-          var script = document.createElement('script');
-          script.src = src;
-          script.type = 'text/javascript';
-          document.body.appendChild(script);
-          break;
-        case "exitFullscreen":
-          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-          break;
-      }
-      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-      }
-    };
-    window.isPermitted = function(originUrl, whitelisted_domains) {
-      var url = document.createElement('a');
-      url.href = originUrl;
-      var hostname = url.hostname;
-      var result = false;
-      if( typeof hostname !== 'undefined' ) {
-        whitelisted_domains.forEach(function(element) {
-            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                result = true;
-            }
-        });
-        return result;
-      }
-    };
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-    </script>
+      
+    <!-- <a
+    href="javascript:void(
+      window.open(
+        'https://form.jotform.com/230157666263054',
+        'blank',
+        'scrollbars=yes,
+        toolbar=no,
+        width=700,
+        height=500'
+      )
+    )
+  ">
+    <h1>Click this link for the pop up registration form</h1>
+    </a> -->
+    <H1>COMING SOON</H1>
+
+    </section>
+
+    <section id="socials">
+
+      <div class="row">
+        <h3>905-714-1777</h3>
+        <div class="col-md-4 col-sm-6">
+          <i class="socials-icon fa-regular fa-envelope fa-3x"></i>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="https://www.facebook.com/CDNNATS">
+          <i class="socials-icon fa-brands fa-facebook fa-3x"></i></a>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <a href="https://twitter.com/CdnNats">
+          <i class="socials-icon fa-brands fa-twitter fa-3x"></i></a>
+        </div>
+      </div>
 
     </section>
   
     <footer id="footer">
   
-      <p>© 2023 Copyright MW Graphics</p>
+      <p>© 2024 Copyright 1000694502 ONTARIO INC.</p>
   
     </footer>
   </body>
