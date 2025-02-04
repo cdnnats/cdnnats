@@ -150,6 +150,16 @@ p {
     margin: auto;
 }
 
+.sponsors-secondary {
+    margin: 2%;
+    text-align: center;
+}
+
+.sponsors-secondary img {
+    width: 60%;
+    margin: auto;
+}
+
 .sponsors-class {
     width: 100%;
     height: auto;
@@ -160,7 +170,7 @@ p {
 }
 
 .sponsors-associate {
-    width: 15%;
+    width: 25%;
     margin: 2%;
     text-align: center;
 }
